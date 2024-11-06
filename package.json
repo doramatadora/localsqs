@@ -11,6 +11,9 @@
         "dist",
         "README.md"
     ],
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    },
     "scripts": {
         "build": "tsc",
         "build:check": "npm run build && npm publish --dry-run",
