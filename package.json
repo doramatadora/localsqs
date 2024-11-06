@@ -1,0 +1,39 @@
+{
+    "name": "localsqs",
+    "version": "0.1.0",
+    "description": "A basic CLI wrapper for ElasticMQ designed for mocking SQS locally.",
+    "main": "dist/elasticmq.js",
+    "types": "dist/elasticmq.d.ts",
+    "bin": {
+        "localsqs": "dist/cli.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "build:check": "npm run build && npm publish --dry-run",
+        "start": "node dist/cli.js",
+        "test": "echo \"One day...\"",
+        "prepare": "husky",
+        "prepublishOnly": "npm run build",
+        "pretty": "prettier . --write"
+    },
+    "keywords": [
+        "elasticmq",
+        "local",
+        "sqs"
+    ],
+    "author": "Dora Militaru <dora@doramilitaru.com>",
+    "license": "MIT",
+    "dependencies": {
+        "@aws-sdk/client-sqs": "^3.682.0",
+        "axios": "^1.7.7",
+        "yargs": "^17.7.2",
+        "zod": "^3.23.8"
+    },
+    "devDependencies": {
+        "@types/node": "^22.9.0",
+        "@types/yargs": "^17.0.33",
+        "husky": "^9.1.6",
+        "prettier": "^3.3.3",
+        "typescript": "^5.6.3"
+    }
+}

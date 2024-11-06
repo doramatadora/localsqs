@@ -1,0 +1,4 @@
+.husky/
+src/
+prettier.config.mjs
+tsconfig.json
