@@ -7,6 +7,10 @@
     "bin": {
         "localsqs": "dist/cli.js"
     },
+    "files": [
+        "dist",
+        "README.md"
+    ],
     "scripts": {
         "build": "tsc",
         "build:check": "npm run build && npm publish --dry-run",
@@ -23,8 +27,15 @@
     ],
     "author": "Dora Militaru <dora@doramilitaru.com>",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/doramatadora/localsqs.git"
+    },
+    "bugs": {
+        "url": "https://github.com/doramatadora/localsqs/issues"
+    },
+    "homepage": "https://github.com/doramatadora/localsqs#readme",
     "dependencies": {
-        "@aws-sdk/client-sqs": "^3.682.0",
         "axios": "^1.7.7",
         "yargs": "^17.7.2",
         "zod": "^3.23.8"
